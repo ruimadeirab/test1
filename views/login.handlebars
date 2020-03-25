@@ -1,0 +1,56 @@
+{{> header}}
+
+<style>
+ .sust-Log{
+    background-image: url('img/coop.jpg');
+    padding: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+  .corpo{
+        background-color: #474e5d;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 400px;
+        padding-right: 400px;
+        }
+
+    .login{
+     border: 3px solid black; 
+       
+    }
+
+</style>
+
+
+<div class="sust-Log">
+<h1>Login</h1>
+</div>
+
+
+
+
+<div class="corpo">
+<div class="login">
+<h2>Login</h2>
+<form action="/login" method="POST">
+<div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<button type="submit">Login</button>
+</form>
+<a href="/register">Register</a>
+
+</div>
+
+
+</div>
+{{> footer}}
